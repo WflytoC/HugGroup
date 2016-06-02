@@ -1,0 +1,8 @@
+#include "Kanna.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/Kanna" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/MOBFoundation" "${PODS_ROOT}/Headers/Public/MOBFoundation/MOBFoundation" "${PODS_ROOT}/Headers/Public/RongCloudIMKit" "${PODS_ROOT}/Headers/Public/RongCloudIMKit/RongIMKit" "${PODS_ROOT}/Headers/Public/RongCloudIMKit/RongIMLib" "${PODS_ROOT}/Headers/Public/SMSSDK" "${PODS_ROOT}/Headers/Public/SMSSDK/SMS_SDK" "${PODS_ROOT}/Headers/Public/SMSSDK/SMS_SDK/Extend" "${PODS_ROOT}/Headers/Public/ShareSDK3" "${PODS_ROOT}/Headers/Public/ShareSDK3/ShareSDK" "${PODS_ROOT}/Headers/Public/ShareSDK3/ShareSDKConnector" "${PODS_ROOT}/Headers/Public/ShareSDK3/ShareSDKExtension" "${PODS_ROOT}/Headers/Public/ShareSDK3/TencentOpenAPI" ${KANNA_HEADER_SEARCH_PATHS}
+OTHER_LDFLAGS = ${KANNA_OTHER_LDFLAGS}
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES
+SWIFT_INCLUDE_PATHS = ${KANNA_SWIFT_INCLUDE_PATHS}

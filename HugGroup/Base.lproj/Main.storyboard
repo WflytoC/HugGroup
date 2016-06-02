@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VJy-xR-JHb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--设 置-->
+        <scene sceneID="hAT-rW-Mrg">
+            <objects>
+                <viewController id="ceX-xQ-ddk" customClass="HGProfileController" customModule="HugGroup" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ghx-32-VY5"/>
+                        <viewControllerLayoutGuide type="bottom" id="9o0-11-H4R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gdX-Bn-mZF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udy-Se-Db6">
+                                <rect key="frame" x="80" y="473" width="440" height="48"/>
+                                <color key="backgroundColor" red="0.98431372549019602" green="0.76078431372549016" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="X5b-bY-wbO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="退出当前账号">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="quitAction:" destination="ceX-xQ-ddk" eventType="touchUpInside" id="Od7-Dm-NAn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Udy-Se-Db6" firstAttribute="centerX" secondItem="gdX-Bn-mZF" secondAttribute="centerX" id="4py-IX-FZp"/>
+                            <constraint firstItem="9o0-11-H4R" firstAttribute="top" secondItem="Udy-Se-Db6" secondAttribute="bottom" constant="30" id="edF-HB-yoo"/>
+                            <constraint firstItem="Udy-Se-Db6" firstAttribute="leading" secondItem="gdX-Bn-mZF" secondAttribute="leadingMargin" constant="60" id="g62-EC-YMx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Udy-Se-Db6" secondAttribute="trailing" constant="60" id="syo-fd-SXv"/>
+                            <constraint firstItem="Udy-Se-Db6" firstAttribute="centerY" secondItem="gdX-Bn-mZF" secondAttribute="centerY" id="y30-fI-I2b"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="y30-fI-I2b"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="设 置" id="gky-3M-agM"/>
+                    <connections>
+                        <outlet property="quitBtn" destination="Udy-Se-Db6" id="Xnv-j3-Wei"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UjZ-Bf-yKn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1990" y="1461"/>
+        </scene>
+        <!--团 圈-->
+        <scene sceneID="SDr-a9-89H">
+            <objects>
+                <viewController id="FzL-Fs-3JC" customClass="HGGroupController" customModule="HugGroup" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7ZH-QW-qbH"/>
+                        <viewControllerLayoutGuide type="bottom" id="mLO-Mq-OkM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sBh-bw-vE1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="团 圈" id="wlz-A3-9A1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EdC-pk-l21" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="446" y="1567"/>
+        </scene>
+        <!--消 息-->
+        <scene sceneID="GvI-vA-IFc">
+            <objects>
+                <viewController id="BCv-pn-lFH" customClass="HGListController" customModule="HugGroup" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hgp-Of-eSa"/>
+                        <viewControllerLayoutGuide type="bottom" id="R36-qN-QMB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cw5-n7-d3e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="消 息" id="b5e-7R-qQs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WcX-Jm-Aug" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1847" y="500"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wjP-14-DLB">
+            <objects>
+                <tabBarController storyboardIdentifier="main_tab" id="VJy-xR-JHb" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="FRf-Ae-6xN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="G36-7f-NJP" kind="relationship" relationship="viewControllers" id="grf-Nf-hBd"/>
+                        <segue destination="UrH-rV-1Cx" kind="relationship" relationship="viewControllers" id="iWg-z5-Doz"/>
+                        <segue destination="F9d-uG-Rwr" kind="relationship" relationship="viewControllers" id="12e-iu-CGY"/>
+                        <segue destination="Fdm-cC-nzX" kind="relationship" relationship="viewControllers" id="7jH-jp-fhC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n93-kP-7Z8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-447" y="165"/>
+        </scene>
+        <!--资源库-->
+        <scene sceneID="8oS-tM-tK5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G36-7f-NJP" customClass="HGNavController" customModule="HugGroup" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="资源库" image="tab_home" selectedImage="tab_home_down" id="tsv-sY-cTX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xvu-sj-34t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.030709134615384603" green="0.030709134615384603" blue="0.030709134615384603" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="M2N-zb-cyV" kind="relationship" relationship="rootViewController" id="FLi-3X-S5T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vld-7n-xDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831" y="-148"/>
+        </scene>
+        <!--资源库-->
+        <scene sceneID="l8h-p0-Ear">
+            <objects>
+                <viewController id="M2N-zb-cyV" customClass="HGHomeController" customModule="HugGroup" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hUz-dI-H9Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="l5k-UV-NEE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G1c-NN-B4Q">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="资源库" id="3PF-dW-hxE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="ZON-5r-K2W">
+                            <connections>
+                                <action selector="switchSearch:" destination="M2N-zb-cyV" id="27a-MI-rbF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5zW-fF-gHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1675" y="-157"/>
+        </scene>
+        <!--消 息-->
+        <scene sceneID="QUn-sg-ExH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UrH-rV-1Cx" customClass="HGNavController" customModule="HugGroup" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="消 息" image="tab_list" selectedImage="tab_list_down" id="Gmd-L8-2dY"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ccI-jP-ZQs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BCv-pn-lFH" kind="relationship" relationship="rootViewController" id="bcz-uZ-xjY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5zu-1h-hSC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882" y="532"/>
+        </scene>
+        <!--团 圈-->
+        <scene sceneID="7fU-yF-N6s">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F9d-uG-Rwr" customClass="HGNavController" customModule="HugGroup" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="团 圈" image="tab_group" selectedImage="tab_group_down" id="XyH-h2-hmK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D7N-rf-m94">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FzL-Fs-3JC" kind="relationship" relationship="rootViewController" id="uvS-Bx-RZI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pxF-58-vHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236" y="1522"/>
+        </scene>
+        <!--设 置-->
+        <scene sceneID="gSp-9r-BrX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fdm-cC-nzX" customClass="HGNavController" customModule="HugGroup" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="设 置" image="tab_user" selectedImage="tab_user_down" id="8C9-zf-z50"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CAP-9z-wa1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ceX-xQ-ddk" kind="relationship" relationship="rootViewController" id="uoA-jk-hgm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1c8-IX-KRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1178" y="1461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_group" width="32" height="32"/>
+        <image name="tab_group_down" width="32" height="32"/>
+        <image name="tab_home" width="32" height="32"/>
+        <image name="tab_home_down" width="32" height="32"/>
+        <image name="tab_list" width="32" height="32"/>
+        <image name="tab_list_down" width="32" height="32"/>
+        <image name="tab_user" width="32" height="32"/>
+        <image name="tab_user_down" width="32" height="32"/>
+    </resources>
+</document>

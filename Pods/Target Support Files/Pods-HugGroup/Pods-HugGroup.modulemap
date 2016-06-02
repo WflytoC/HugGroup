@@ -1,0 +1,6 @@
+framework module Pods_HugGroup {
+  umbrella header "Pods-HugGroup-umbrella.h"
+
+  export *
+  module * { export * }
+}

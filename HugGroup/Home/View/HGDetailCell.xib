@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="detail_cell" id="KGk-i7-Jjw" customClass="HGDetailCell" customModule="HugGroup" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sdl-ER-Vep">
+                        <rect key="frame" x="10" y="10" width="60" height="59"/>
+                        <color key="backgroundColor" red="0.24885189096047824" green="0.94873798076923077" blue="0.16284531533098748" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Qxl-Gu-LRR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mac开发团" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvp-bt-2fg">
+                        <rect key="frame" x="80" y="5" width="230" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="04j-Ay-yDs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.22786784837538354" green="0.097012012743156795" blue="0.9234775641025641" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是一只小小鸟，怎么飞也飞不高；我是一只小小鸟，怎么飞也飞不高" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T70-Gm-ZLZ">
+                        <rect key="frame" x="80" y="30" width="230" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.94873798076923077" green="0.35943588214835992" blue="0.19472442124475672" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckm-iP-BMV">
+                        <rect key="frame" x="0.0" y="79" width="320" height="0.0"/>
+                        <color key="backgroundColor" red="0.32156330620638129" green="1" blue="0.30418813964221869" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="LEP-AA-feW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Cvp-bt-2fg" secondAttribute="trailing" constant="10" id="2xf-Y2-ZzN"/>
+                    <constraint firstItem="T70-Gm-ZLZ" firstAttribute="leading" secondItem="sdl-ER-Vep" secondAttribute="trailing" constant="10" id="3Oo-iS-3UW"/>
+                    <constraint firstAttribute="bottom" secondItem="sdl-ER-Vep" secondAttribute="bottom" constant="10" id="4vL-2j-R6Y"/>
+                    <constraint firstItem="sdl-ER-Vep" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="5g0-I5-q3J"/>
+                    <constraint firstAttribute="trailing" secondItem="ckm-iP-BMV" secondAttribute="trailing" id="7eb-Hq-n4M"/>
+                    <constraint firstAttribute="bottom" secondItem="T70-Gm-ZLZ" secondAttribute="bottom" constant="10" id="P4p-ab-VX4"/>
+                    <constraint firstItem="sdl-ER-Vep" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="T9k-EZ-NfB"/>
+                    <constraint firstItem="ckm-iP-BMV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Tww-RN-Nme"/>
+                    <constraint firstItem="Cvp-bt-2fg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="YRS-Vl-hhT"/>
+                    <constraint firstAttribute="trailing" secondItem="T70-Gm-ZLZ" secondAttribute="trailing" constant="10" id="b0t-Xr-TRB"/>
+                    <constraint firstItem="T70-Gm-ZLZ" firstAttribute="top" secondItem="Cvp-bt-2fg" secondAttribute="bottom" constant="5" id="r82-9p-FiJ"/>
+                    <constraint firstAttribute="bottom" secondItem="ckm-iP-BMV" secondAttribute="bottom" id="tg0-ZL-lhZ"/>
+                    <constraint firstItem="Cvp-bt-2fg" firstAttribute="leading" secondItem="sdl-ER-Vep" secondAttribute="trailing" constant="10" id="uNO-ew-zCr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="groupIcon" destination="sdl-ER-Vep" id="7yv-d0-dfl"/>
+                <outlet property="groupInfo" destination="T70-Gm-ZLZ" id="itN-uC-tK8"/>
+                <outlet property="groupName" destination="Cvp-bt-2fg" id="z20-1y-AsY"/>
+            </connections>
+            <point key="canvasLocation" x="15" y="150"/>
+        </tableViewCell>
+    </objects>
+</document>

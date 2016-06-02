@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B5DA8D6C4E02AEDAA599DEB860584DEC05E77186",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "3d9062eb-60b9-402f-8692-328e1e9d83a3++5308" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B5DA8D6C4E02AEDAA599DEB860584DEC05E77186" : 0,
+    "3d9062eb-60b9-402f-8692-328e1e9d83a3++5308" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F871D364-13B9-4661-800F-0E5934BE1773",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B5DA8D6C4E02AEDAA599DEB860584DEC05E77186" : "HugGroup\/",
+    "3d9062eb-60b9-402f-8692-328e1e9d83a3++5308" : "HugGroup\/HugGroup\/LiveVideo\/SDWebData_1.0.2\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HugGroup",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HugGroup.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn.stm.com\/svn\/common",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3d9062eb-60b9-402f-8692-328e1e9d83a3++5308"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:WflytoC\/HugGroup.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B5DA8D6C4E02AEDAA599DEB860584DEC05E77186"
+    }
+  ]
+}
